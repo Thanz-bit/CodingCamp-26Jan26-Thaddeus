@@ -1,0 +1,121 @@
+*{
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #b0cec3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    font-style:italic ;
+
+}
+
+
+
+.navbar .navbar-nav a{
+    color: black;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 1rem;  
+    
+}
+
+.navbar .navbar-nav a:hover{
+    color: #007b5e;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    background-color: #007b5e;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem;
+    transform: scaleX(0);  
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+}
+
+.hero{
+    background-image: url(../gambar.jpg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;
+    position: relative;
+
+}
+
+.hero::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(0deg, rgba(1,1,3,1)8%, rgba(255,255,255,0)50%);
+    bottom: 0;
+}
+
+.hero .content{
+    color: #ffffff;
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1{
+    font-size: 4rem;
+    color: #ffffff;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(1,1,2,0.5);
+}
+
+.hero .content p{
+    font-size: 1.6rem;
+    margin: 1rem 0 2rem 0;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px rgba(1,1,2,0.5);
+    line-height: 1.4;
+    font-weight: 100;
+}
+
+.hero .content .cta{
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    background-color: #007b5e;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px;
+}
+ 
