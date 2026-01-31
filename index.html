@@ -12,13 +12,15 @@
     <header>
         <nav class="navbar">
             <div class="nav-logo">
-                <a href="#" class="navbar-logo">Logo</a>
+                <a href="#" class="navbar-logo">
+                    <img src="gambar.jpg" alt="">
+                </a>
             </div>
             <div class="navbar-nav">           
-                <a href="#">Home</a>
-                <a href="#">Our Profile</a>
-                <a href="#">Portofolio</a>
-                <a href="#">Message Us</a>
+                <a href="#home">Home</a>
+                <a href="#about">Our Profile</a>
+                <a href="#portfolio">Portofolio</a>
+                <a href="#message">Message Us</a>
             </div>
         </nav>
     </header>
@@ -29,12 +31,149 @@
         <section class="hero" id="home">
             <main class="content">
                 <h1>Hi Thaddeus, Welcome To Website</h1>
-                <p>This is my first website</p>
+                <p>This is my first company website</p>
                 <a href="#" class="cta">Join Us</a>
             </main>            
         </section>
 
+        <section class="about" id="home">
+            <div class="container">
+            <h2 class="section-title">Our Headquarter</h2>
+            <div class="headquarters">
+                <div class="hq-card">
+                    <div class="hq-image">
+                        <img src="gambar.jpg" alt="gambar laptop">
+                    </div>
+                    <p class="hq-name">Jakarta</p>
+                </div>
+                <div class="hq-card">
+                    <div class="hq-image">
+                        <img src="gambar.jpg" alt="gambar laptop">
+                    </div>
+                    <p class="hq-name">Bandung</p>
+                </div>
+                <div class="hq-card">
+                    <div class="hq-image">
+                        <img src="gambar.jpg" alt="gambar laptop">
+                    </div>
+                    <p class="hq-name">Surabaya</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Section -->
+    <section id="about" class="profile-section">
+        <div class="container">
+            <h2>Our Profile</h2>
+            <div class="profile-content">
+                <div class="profile-banner">
+                    <img src="gambar.jpg" alt="Company Banner">
+                </div>
+                <div class="profile-info">
+                    <h3>About Our Company</h3>
+                    <p>We are a leading software development company dedicated to delivering innovative solutions. Our team of experienced professionals works tirelessly to create cutting-edge technology that helps businesses thrive in the digital age.</p>
+                    <h3>Our Vision</h3>
+                    <p>To be the most trusted technology partner for businesses worldwide, driving digital transformation through innovative software solutions.</p>
+                    <h3>Our Mission</h3>
+                    <p>Empowering businesses with reliable, scalable, and user-friendly software solutions that enhance productivity and drive growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="gambar.jpg" alt="gambar laptop">
+                    </div>
+                    <h3>Project 1</h3>
+                    <p>Description project 1</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="gambar.jpg" alt="gambar laptop">
+                    </div>
+                    <h3>Project 2</h3>
+                    <p>Description project 2</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="gambar.jpg" alt="gambar laptop">
+                    </div>
+                    <h3>Project 3</h3>
+                    <p>Description project 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Us Section -->
+    <section id="message" class="message-section">
+        <div class="container">
+            <h2 class="section-title">Message Us</h2>
+            <div class="message-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name :</label>
+                        <input type="text" id="name" name="name" placeholder="Nama" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthDate">Date of Birth :</label>
+                        <input type="date" id="birthDate" name="birthDate" required>
+                        <span class="error-message" id="birthDateError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender :</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="Laki-laki" required> Male
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="Perempuan" required> Female
+                            </label>
+                        </div>
+                        <span class="error-message" id="genderError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Pesan" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+
+                <div class="result-display" id="resultDisplay">
+                    <h3>Current time :</h3>
+                    <p id="currentTime"></p>
+                    <h3>Name :</h3>
+                    <p id="displayName"></p>
+                    <h3>Date of Birth :</h3>
+                    <p id="displayBirthDate"></p>
+                    <h3>Gender :</h3>
+                    <p id="displayGender"></p>
+                    <h3>Message :</h3>
+                    <p id="displayMessage"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!--Section Content-->
-    <footer></footer>
+    <!--Footer-->
+      <footer class="footer">
+        <p>Created By ThanZ</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
